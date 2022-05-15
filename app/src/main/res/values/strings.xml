@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BodyHealth</string>
+    <string name="welcome">Welcome to BodyHealth!</string>
+    <string name="register">Register</string>
+
+    <string name="nameregister">Insert your name</string>
+
+    <string name="loginButton">LOGIN</string>
+    <string name="registerButton">REGISTER</string>
+</resources>
