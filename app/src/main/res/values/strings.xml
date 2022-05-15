@@ -1,10 +1,30 @@
 <resources>
+    <!-- App Name -->
     <string name="app_name">BodyHealth</string>
-    <string name="welcome">Welcome to BodyHealth!</string>
-    <string name="register">Register</string>
 
-    <string name="nameregister">Insert your name</string>
+    <!-- WelcomeActivity -->
+    <string name="welcome">Bem-vindo à BodyHealth!</string>
+    <string name="register">Registo</string>
+    <string name="login">Login</string>
 
-    <string name="loginButton">LOGIN</string>
-    <string name="registerButton">REGISTER</string>
+    <!-- RegisterActivity -->
+    <string name="firstNameRegister">Inserir Primeiro Nome</string>
+    <string name="lastNameRegister">Inserir Último Nome</string>
+    <string name="emailRegister">Inserir E-mail</string>
+    <string name="passwordRegister">Inserir Palavra-passe</string>
+    <string name="passwordConfirmationRegister">Confirmar Palavra-passe</string>
+
+    <!-- LoginActivity -->
+    <string name="emailLogin">Inserir E-mail</string>
+    <string name="passwordLogin">Inserir Palavra-passe</string>
+    <string name="forgotPasswordLogin">Esqueceu-se da Palavra-passe?</string>
+
+    <!-- ForgottenPasswordActivity -->
+    <string name="forgotPasswordFP">Esqueceu-se da Palavra-passe?</string>
+    <string name="emailRegisterFP">Insira o e-mail de registo para a recuperar</string>
+
+    <!-- Buttons -->
+    <string name="loginButton">ENTRAR</string>
+    <string name="registerButton">REGISTAR</string>
+    <string name="recoveryPasswordButton">RECUPERAR</string>
 </resources>

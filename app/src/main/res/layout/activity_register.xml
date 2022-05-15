@@ -8,15 +8,15 @@
 
     <ImageView
         android:id="@+id/iconBodyHealth"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginTop="@dimen/margin_big"
 
+        app:layout_constraintBottom_toTopOf="@id/textRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textRegister"
-        app:srcCompat="@drawable/bodyhealth" />
+        app:srcCompat="@drawable/icon_body_health" />
 
     <TextView
         android:id="@+id/textRegister"
@@ -28,28 +28,105 @@
         android:textSize="45sp"
         android:textStyle="bold"
 
+        app:layout_constraintBottom_toTopOf="@id/firstNameRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iconBodyHealth" />
 
 
     <EditText
-        android:id="@+id/nameRegister"
+        android:id="@+id/firstNameRegister"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-
         android:background="@drawable/round_border"
-        android:drawableStart="@drawable/ic_person"
+        android:drawableStart="@drawable/icon_person"
         android:drawablePadding="16dp"
-        android:hint="@string/nameregister"
-        android:inputType="textPersonName"
+        android:hint="@string/firstNameRegister"
         android:padding="12dp"
         android:textSize="14sp"
 
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lastNameRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textRegister" />
 
+    <EditText
+        android:id="@+id/lastNameRegister"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/icon_person"
+        android:drawablePadding="16dp"
+        android:hint="@string/lastNameRegister"
+        android:padding="12dp"
+        android:textSize="14sp"
 
+        app:layout_constraintBottom_toTopOf="@id/emailRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameRegister" />
+
+    <EditText
+        android:id="@+id/emailRegister"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/icon_email"
+        android:drawablePadding="16dp"
+        android:hint="@string/emailRegister"
+        android:padding="12dp"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toTopOf="@id/passwordRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameRegister" />
+
+    <EditText
+        android:id="@+id/passwordRegister"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/icon_lock"
+        android:drawablePadding="16dp"
+        android:hint="@string/passwordRegister"
+        android:padding="12dp"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toTopOf="@id/passwordConfirmationRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailRegister" />
+
+    <EditText
+        android:id="@+id/passwordConfirmationRegister"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/icon_lock"
+        android:drawablePadding="16dp"
+        android:hint="@string/passwordConfirmationRegister"
+        android:padding="12dp"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toTopOf="@id/registerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordRegister" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_background"
+        android:fontFamily="sans-serif"
+        android:text="@string/registerButton"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordConfirmationRegister" />
 </androidx.constraintlayout.widget.ConstraintLayout>
