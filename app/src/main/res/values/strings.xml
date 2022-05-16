@@ -19,12 +19,21 @@
     <string name="passwordLogin">Inserir Palavra-passe</string>
     <string name="forgotPasswordLogin">Esqueceu-se da Palavra-passe?</string>
 
+    <!-- LogoutActivity -->
+    <string name="byeLogout">Até já &#128578;</string>
+    <string name="seeYouSoonLogout">Esperamos voltar a ver-te em breve!</string>
+
     <!-- ForgottenPasswordActivity -->
     <string name="forgotPasswordFP">Esqueceu-se da Palavra-passe?</string>
     <string name="emailRegisterFP">Insira o e-mail de registo para a recuperar</string>
+
+    <!-- DashboardActivity -->
+    <string name="profileDashboard">PERFIL</string>
+    <string name="profile">PERFIL</string>
 
     <!-- Buttons -->
     <string name="loginButton">ENTRAR</string>
     <string name="registerButton">REGISTAR</string>
     <string name="recoveryPasswordButton">RECUPERAR</string>
+    <string name="loginAgainButton">ENTRAR DE NOVO</string>
 </resources>
