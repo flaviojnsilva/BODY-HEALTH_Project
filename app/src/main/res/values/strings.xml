@@ -29,6 +29,7 @@
 
     <!-- DashboardActivity -->
     <string name="profileDashboard">PERFIL</string>
+    <string name="helloDashboard">Olá user</string>
     <string name="profile">PERFIL</string>
 
     <!-- Buttons -->
@@ -36,4 +37,8 @@
     <string name="registerButton">REGISTAR</string>
     <string name="recoveryPasswordButton">RECUPERAR</string>
     <string name="loginAgainButton">ENTRAR DE NOVO</string>
+    <string name="Tensão">Tensão Arterial</string>
+    <string name="TRegisto">Novo Registo</string>
+    <string name="Tchoice">Escolha uma das 3 Opções</string>
+    <string name="TConsultar">Consultar Registos</string>
 </resources>
