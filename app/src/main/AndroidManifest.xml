@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BodyHealth">
         <activity
+            android:name=".TConsulta"
+            android:exported="false" />
+        <activity
             android:name=".RegTensao"
             android:exported="false" />
         <activity
