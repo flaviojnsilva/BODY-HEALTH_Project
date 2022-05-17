@@ -41,4 +41,8 @@
     <string name="TRegisto">Novo Registo</string>
     <string name="Tchoice">Escolha uma das 3 Opções</string>
     <string name="TConsultar">Consultar Registos</string>
+    <string name="TConsRegistos">Consultar Registos</string>
+    <string name="TregManual">REGISTO MANUAL</string>
+    <string name="TregVoz">REGISTO POR VOZ</string>
+    <string name="TregScan">REGISTO POR SCAN</string>
 </resources>
