@@ -9,16 +9,18 @@
 
     <Button
         android:id="@+id/TConsRegistos2"
-        android:layout_width="187dp"
-        android:layout_height="169dp"
+        android:layout_width="223dp"
+        android:layout_height="153dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@android:color/darker_gray"
         android:drawableBottom="@mipmap/TConsulta_foreground"
         android:text="@string/TConsRegistos"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.129"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="546dp" />
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/TConsRegistos"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/TregScan"
@@ -105,16 +107,18 @@
 
     <Button
         android:id="@+id/TConsRegistos"
-        android:layout_width="196dp"
-        android:layout_height="169dp"
+        android:layout_width="167dp"
+        android:layout_height="153dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@android:color/darker_gray"
-        android:drawableBottom="@mipmap/RegistosAnteriores_foreground"
+        android:drawableBottom="@mipmap/reg_anterior_foreground"
         android:text="Registos Anteriores"
         android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.684"
-        app:layout_constraintStart_toEndOf="@+id/TConsRegistos2"
-        tools:layout_editor_absoluteY="546dp" />
+        app:layout_constraintStart_toEndOf="@+id/TConsRegistos2" />
     ... />
 
 

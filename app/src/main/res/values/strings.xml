@@ -30,7 +30,7 @@
     <!-- DashboardActivity -->
     <string name="profileDashboard">PERFIL</string>
     <string name="helloDashboard">Olá user</string>
-    <string name="profile">PERFIL</string>
+    <string name="timeActivityDashboard">Hoje fizeste 7 min de atividade física</string>
 
     <!-- Buttons -->
     <string name="loginButton">ENTRAR</string>
