@@ -5,7 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".RegTensao">
+    tools:context=".TConsulta">
+
+    <Button
+        android:id="@+id/TConsRegistos2"
+        android:layout_width="187dp"
+        android:layout_height="169dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:drawableBottom="@mipmap/TConsulta_foreground"
+        android:text="@string/TConsRegistos"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="546dp" />
 
     <Button
         android:id="@+id/TregScan"
@@ -57,7 +70,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:padding="15dp"
-        android:text="@string/TRegisto"
+        android:text="@string/TConsulta"
         android:textColor="@color/black"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,7 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="15dp"
-        android:text="@string/Tchoice"
+        android:text="@string/TConsultaReg"
         android:textColor="@android:color/darker_gray"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,16 +105,16 @@
 
     <Button
         android:id="@+id/TConsRegistos"
-        android:layout_width="258dp"
-        android:layout_height="115dp"
+        android:layout_width="196dp"
+        android:layout_height="169dp"
         android:backgroundTint="@android:color/darker_gray"
-        android:drawableLeft="@mipmap/tensoes_foreground"
-        android:text="@string/TConsRegistos"
+        android:drawableBottom="@mipmap/RegistosAnteriores_foreground"
+        android:text="Registos Anteriores"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="562dp" />
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toEndOf="@+id/TConsRegistos2"
+        tools:layout_editor_absoluteY="546dp" />
     ... />
 
 

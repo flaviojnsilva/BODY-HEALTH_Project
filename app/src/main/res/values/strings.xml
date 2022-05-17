@@ -45,4 +45,6 @@
     <string name="TregManual">REGISTO MANUAL</string>
     <string name="TregVoz">REGISTO POR VOZ</string>
     <string name="TregScan">REGISTO POR SCAN</string>
+    <string name="TConsulta">Consultar Registo</string>
+    <string name="TConsultaReg">Ultimos 3 registos</string>
 </resources>
