@@ -10,10 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BodyHealth">
         <activity
+            android:name=".DDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".DConsulta"
+            android:exported="false" />
+        <activity
+            android:name=".DReg"
+            android:exported="false" />
+        <activity
+            android:name=".TDashboard"
+            android:exported="false" />
+        <activity
             android:name=".TConsulta"
             android:exported="false" />
         <activity
-            android:name=".RegTensao"
+            android:name=".TReg"
             android:exported="false" />
         <activity
             android:name=".WelcomeActivity"

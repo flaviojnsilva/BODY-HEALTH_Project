@@ -47,4 +47,7 @@
     <string name="TregScan">REGISTO POR SCAN</string>
     <string name="TConsulta">Consultar Registo</string>
     <string name="TConsultaReg">Ultimos 3 registos</string>
+    <string name="tConsultaRegistos">Registos Anteriores</string>
+    <string name="diabetes">Diabetes</string>
+    <string name="TChoice">Escolha uma das 3 opções</string>
 </resources>
