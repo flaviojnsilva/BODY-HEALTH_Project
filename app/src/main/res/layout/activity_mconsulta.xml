@@ -5,74 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".TDashboard">
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="140dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="36dp"
-        android:padding="15dp"
-        android:text="mmHg"
-        android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="427dp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="140dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="240dp"
-        android:padding="15dp"
-        android:text="83"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:textSize="50sp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="338dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="140dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="36dp"
-        android:padding="15dp"
-        android:text="129"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="50sp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="338dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="140dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="240dp"
-        android:padding="15dp"
-        android:text="mmHg"
-        android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="427dp" />
-
-    <TextView
-        android:id="@+id/tchoice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="  - 18 de Março de 2022, às 22:00"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/Tchoice"
-        tools:layout_editor_absoluteX="5dp" />
+    tools:context=".Mconsulta">
 
     <Button
         android:id="@+id/TConsRegistos2"
@@ -80,7 +13,7 @@
         android:layout_height="149dp"
         android:layout_marginBottom="60dp"
         android:backgroundTint="@android:color/darker_gray"
-        android:drawableBottom="@mipmap/t_consulta_foreground"
+        android:drawableBottom="@mipmap/medidas_foreground"
         android:text="Novo Registo"
         android:textColor="@color/white"
         android:textSize="12sp"
@@ -89,13 +22,38 @@
         app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/TregScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text=""
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="465dp" />
+
+    <Button
+
+        android:id="@+id/TregVoz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text=""
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="389dp" />
+
     <TextView
         android:id="@+id/Tensão"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:padding="30dp"
-        android:text="@string/Tensão"
+        android:text="Medidas"
         android:textAlignment="center"
         android:textColor="@android:color/darker_gray"
         android:textSize="40sp"
@@ -109,15 +67,17 @@
 
 
     <TextView
-        android:id="@+id/Hello"
+        android:id="@+id/TRegisto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
         android:fontFamily="sans-serif-medium"
         android:padding="15dp"
-        android:text="Olá, João Silva"
+        android:text="@string/TConsulta"
         android:textColor="@color/black"
         android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="114dp" />
 
     <TextView
@@ -125,25 +85,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="15dp"
-        android:text="Último Registo"
-        android:textStyle="bold"
+        android:text="@string/TConsultaReg"
         android:textColor="@android:color/darker_gray"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="170dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="201dp" />
 
-    <TextView
+    <Button
+        android:id="@+id/TregManual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="70 \nPul/min"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text=""
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="261dp" />
+        tools:layout_editor_absoluteY="313dp" />
 
     <Button
         android:id="@+id/TConsRegistos"

@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BodyHealth">
         <activity
+            android:name=".MDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Mconsulta"
+            android:exported="false" />
+        <activity
+            android:name=".MReg"
+            android:exported="false" />
+        <activity
             android:name=".DDashboard"
             android:exported="false" />
         <activity
