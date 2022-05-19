@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_profile" />
+        app:srcCompat="@drawable/ic_dashboard_icon_profile" />
 
     <TextView
         android:id="@+id/profileDashboard"
@@ -33,17 +33,134 @@
 
     <TextView
         android:id="@+id/helloDashboard"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:text="@string/helloDashboard"
         android:textColor="@android:color/black"
-        android:textSize="15sp"
+        android:textSize="35sp"
         android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/timeActivityDashboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileDashboard" />
+
+    <TextView
+        android:id="@+id/timeActivityDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/timeActivityDashboard"
+        android:textColor="@android:color/black"
+        android:textSize="27sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/stepsNumberDashboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/helloDashboard" />
+
+    <TextView
+        android:id="@+id/stepsNumberDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/stepsNumberDashboard"
+        android:textColor="@android:color/black"
+        android:textSize="100sp"
+
+        app:layout_constraintBottom_toTopOf="@id/distanceDashboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timeActivityDashboard" />
+
+    <TextView
+        android:id="@+id/distanceDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="start"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/distanceDashboard"
+        android:textColor="@color/grey"
+
+        app:layout_constraintBottom_toTopOf="@id/bloodPressureDashboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stepsNumberDashboard" />
+
+    <TextView
+        android:id="@+id/caloriesDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="end"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/caloriesDashboard"
+        android:textColor="@color/grey"
+
+        app:layout_constraintBottom_toTopOf="@id/bloodPressureDashboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stepsNumberDashboard" />
+
+    <Button
+        android:id="@+id/diabetesDashboard"
+        android:layout_width="110dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/grey"
+        android:drawableBottom="@drawable/ic_dashboard_diabetes"
+        android:text="@string/diabetesDashboard"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/distanceDashboard" />
+
+
+    <Button
+        android:id="@+id/bloodPressureDashboard"
+        android:layout_width="110dp"
+        android:layout_height="200dp"
+        android:backgroundTint="@color/grey"
+        android:drawableBottom="@drawable/ic_dashboard_blood_pressure"
+        android:text="@string/bloodPressureDashboard"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13sp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profileDashboard" />
+        app:layout_constraintTop_toBottomOf="@id/distanceDashboard" />
+
+    <Button
+        android:id="@+id/measuresDashboard"
+        android:layout_width="110dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/grey"
+        android:drawableBottom="@drawable/ic_dasboard_bmi"
+        android:text="@string/measuresDashboard"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/distanceDashboard" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

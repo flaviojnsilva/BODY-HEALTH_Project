@@ -29,8 +29,14 @@
 
     <!-- DashboardActivity -->
     <string name="profileDashboard">PERFIL</string>
-    <string name="helloDashboard">Olá user</string>
-    <string name="timeActivityDashboard">Hoje fizeste 7 min de atividade física</string>
+    <string name="helloDashboard">Olá João Silva</string>
+    <string name="timeActivityDashboard"><font fgcolor="#FF808080">Hoje fizeste</font><font fgcolor="#FF000000"> 7 min </font><font fgcolor="#FF808080">de atividade física</font></string>
+    <string name="stepsNumberDashboard"><font size="100">500 \n</font><font fgcolor="#FF808080" size="50">PASSOS</font></string>
+    <string name="distanceDashboard"><font size="25">Distância\n</font><font fgcolor="#FF000000" size="20">0,350 </font><font fgcolor="#FF808080" size="20">m</font></string>
+    <string name="caloriesDashboard"><font size="25">Calorias\n</font><font fgcolor="#FF000000" size="20">7,25 </font><font fgcolor="#FF808080" size="20">kcal</font></string>
+    <string name="diabetesDashboard">Diabetes</string>
+    <string name="bloodPressureDashboard">Tensão Arterial</string>
+    <string name="measuresDashboard">Medidas</string>
 
     <!-- Buttons -->
     <string name="loginButton">ENTRAR</string>
