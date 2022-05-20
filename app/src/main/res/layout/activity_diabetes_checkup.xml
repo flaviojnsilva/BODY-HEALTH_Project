@@ -5,49 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".TDashboard">
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="140dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="28dp"
-        android:padding="15dp"
-        android:text="mg/dl"
-        android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="374dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="140dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="28dp"
-        android:padding="15dp"
-        android:text="129"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="285dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/tchoice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Data1"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/Tchoice"
-        tools:layout_editor_absoluteX="11dp"
-        tools:ignore="MissingConstraints" />
+    tools:context=".BloodPressureCheckupActivity">
 
     <Button
         android:id="@+id/TConsRegistos2"
@@ -64,13 +22,38 @@
         app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/TregScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/data3"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="453dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+
+        android:id="@+id/TregVoz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/data2"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="377dp"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/Tensão"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:padding="30dp"
-        android:text="@string/diabetes"
+        android:text="@string/diab"
         android:textAlignment="center"
         android:textColor="@android:color/darker_gray"
         android:textSize="40sp"
@@ -84,15 +67,17 @@
 
 
     <TextView
-        android:id="@+id/Hello"
+        android:id="@+id/TRegisto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
         android:fontFamily="sans-serif-medium"
         android:padding="15dp"
-        android:text="@string/JSilva"
+        android:text="@string/CReg"
         android:textColor="@color/black"
         android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="114dp"
         tools:ignore="MissingConstraints" />
 
@@ -101,12 +86,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="15dp"
-        android:text="@string/UReg"
-        android:textStyle="bold"
+        android:text="@string/TConsultaReg"
         android:textColor="@android:color/darker_gray"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="201dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/TregManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/Data1"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="296dp"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -115,7 +113,7 @@
         android:layout_height="150dp"
         android:layout_marginBottom="60dp"
         android:backgroundTint="@android:color/darker_gray"
-        android:drawableBottom="@drawable/img_2"
+        android:drawableBottom="@drawable/img_1"
         android:text="@string/CReg"
         android:textColor="@color/white"
         android:textSize="12sp"

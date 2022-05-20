@@ -10,31 +10,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BodyHealth">
         <activity
-            android:name=".MDashboard"
+            android:name=".MeasuresDashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".Mconsulta"
+            android:name=".MeasuresCheckupActivity"
             android:exported="false" />
         <activity
-            android:name=".MReg"
+            android:name=".MeasuresRegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".DDashboard"
+            android:name=".DiabetesDashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".DConsulta"
+            android:name=".DiabetesCheckupActivity"
             android:exported="false" />
         <activity
-            android:name=".DReg"
+            android:name=".DiabetesRegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".TDashboard"
+            android:name=".BloodPressureDashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".TConsulta"
+            android:name=".BloodPressureCheckupActivity"
             android:exported="false" />
         <activity
-            android:name=".TReg"
+            android:name=".BloodPressureRegisterActivity"
             android:exported="false" />
         <activity
             android:name=".WelcomeActivity"

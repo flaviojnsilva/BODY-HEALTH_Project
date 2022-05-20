@@ -12,7 +12,6 @@ import java.util.*
 
 class WelcomeActivity : AppCompatActivity() {
 
-
     private val userDatabase by lazy {
         UserDatabase.getDatabase(this).userDao()
 

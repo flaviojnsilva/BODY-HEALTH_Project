@@ -4,43 +4,42 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.181" />
-        <entry key="app/src/main/res/drawable/RegistosAnteriores_background.xml" value="0.1085" />
-        <entry key="app/src/main/res/drawable/TConsulta_background.xml" value="0.1085" />
+        <entry key="app/src/main/res/drawable/RegistosAnteriores_background.xml" value="0.3765" />
+        <entry key="app/src/main/res/drawable/TConsulta_background.xml" value="0.3765" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/ic_person.xml" value="0.181" />
-        <entry key="app/src/main/res/drawable/registosAnteriores_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/icon_email.xml" value="0.2805" />
+        <entry key="app/src/main/res/drawable/icon_lock.xml" value="0.2805" />
+        <entry key="app/src/main/res/drawable/icon_person.xml" value="0.2805" />
+        <entry key="app/src/main/res/drawable/registos_anteriores_background.xml" value="0.2025" />
         <entry key="app/src/main/res/drawable/round_bg.xml" value="0.181" />
         <entry key="app/src/main/res/drawable/round_border.xml" value="0.181" />
-        <entry key="app/src/main/res/drawable/tensoes_foreground.xml" value="0.1655" />
-        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.375" />
-        <entry key="app/src/main/res/layout/activity_dconsulta.xml" value="0.18719635009765628" />
-        <entry key="app/src/main/res/layout/activity_ddashboard.xml" value="0.316253662109375" />
-        <entry key="app/src/main/res/layout/activity_dreg.xml" value="0.2776268115942029" />
-        <entry key="app/src/main/res/layout/activity_forgottenpassword.xml" value="0.23177083333333334" />
+        <entry key="app/src/main/res/drawable/t_consulta_background.xml" value="0.2025" />
+        <entry key="app/src/main/res/drawable/tensoes_background.xml" value="0.3765" />
+        <entry key="app/src/main/res/drawable/tensoes_foreground.xml" value="0.3765" />
+        <entry key="app/src/main/res/layout/activity_blood_pressure_checkup.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.2341485507246377" />
+        <entry key="app/src/main/res/layout/activity_dconsulta.xml" value="0.3463541666666667" />
+        <entry key="app/src/main/res/layout/activity_ddashboard.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/activity_forgottenpassword.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_logout.xml" value="0.23177083333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.15760869565217392" />
-        <entry key="app/src/main/res/layout/activity_mconsulta.xml" value="0.2776268115942029" />
-        <entry key="app/src/main/res/layout/activity_mdashboard.xml" value="0.21826601603589574" />
-        <entry key="app/src/main/res/layout/activity_mreg.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_reg_diabetes.xml" value="0.2776268115942029" />
-        <entry key="app/src/main/res/layout/activity_reg_tensao.xml" value="0.28830718994140625" />
-        <entry key="app/src/main/res/layout/activity_register.xml" value="0.2840577719868093" />
-        <entry key="app/src/main/res/layout/activity_tconsulta.xml" value="0.3915059407552084" />
-        <entry key="app/src/main/res/layout/activity_tdashboard.xml" value="0.36044236335201524" />
-        <entry key="app/src/main/res/layout/activity_treg.xml" value="0.2776268115942029" />
+        <entry key="app/src/main/res/layout/activity_mconsulta.xml" value="0.19479166666666667" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_reg_tensao.xml" value="0.2328125" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.16802536231884058" />
+        <entry key="app/src/main/res/layout/activity_resume_activity.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_tconsulta.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/activity_tdashboard.xml" value="0.3463541666666667" />
+        <entry key="app/src/main/res/layout/activity_treg.xml" value="0.37604166666666666" />
         <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.25" />
         <entry key="app/src/main/res/layout/round_border.xml" value="0.2328125" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/TConsulta.xml" value="0.3765" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/TConsulta_round.xml" value="0.2025" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.196" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.148" />
-        <entry key="app/src/main/res/mipmap-anydpi-v26/icone.xml" value="0.168" />
-        <entry key="app/src/main/res/mipmap-anydpi-v26/registos_anteriores.xml" value="0.168" />
-        <entry key="app/src/main/res/mipmap-anydpi-v26/registos_anteriores_round.xml" value="0.168" />
-        <entry key="app/src/main/res/mipmap-anydpi-v26/t_consulta.xml" value="0.168" />
-        <entry key="app/src/main/res/mipmap-anydpi-v26/t_consulta_round.xml" value="0.168" />
-        <entry key="app/src/main/res/mipmap-anydpi-v26/tensoes.xml" value="0.1645" />
-        <entry key="app/src/main/res/mipmap-anydpi-v26/tensoes_round.xml" value="0.1645" />
       </map>
     </option>
   </component>

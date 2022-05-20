@@ -5,74 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".TDashboard">
+    tools:context=".BloodPressureDashboardActivity">
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="140dp"
         android:layout_height="59dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="28dp"
         android:padding="15dp"
-        android:text="mmHg"
+        android:text="mg/dl"
         android:textAlignment="center"
         android:textColor="@android:color/darker_gray"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="427dp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="140dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="240dp"
-        android:padding="15dp"
-        android:text="83"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:textSize="50sp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="338dp" />
+        tools:layout_editor_absoluteY="374dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="140dp"
         android:layout_height="89dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="28dp"
         android:padding="15dp"
         android:text="129"
-        android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="50sp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="338dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="140dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="240dp"
-        android:padding="15dp"
-        android:text="mmHg"
-        android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="427dp" />
+        tools:layout_editor_absoluteY="285dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tchoice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="  - 18 de Março de 2022, às 22:00"
+        android:text="@string/Data1"
         android:textColor="@android:color/darker_gray"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/Tchoice"
-        tools:layout_editor_absoluteX="5dp" />
+        tools:layout_editor_absoluteX="11dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/TConsRegistos2"
@@ -80,8 +55,8 @@
         android:layout_height="149dp"
         android:layout_marginBottom="60dp"
         android:backgroundTint="@android:color/darker_gray"
-        android:drawableBottom="@mipmap/t_consulta_foreground"
-        android:text="Novo Registo"
+        android:drawableBottom="@drawable/img"
+        android:text="@string/NReg"
         android:textColor="@color/white"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -95,7 +70,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:padding="30dp"
-        android:text="@string/Tensão"
+        android:text="@string/diabetes"
         android:textAlignment="center"
         android:textColor="@android:color/darker_gray"
         android:textSize="40sp"
@@ -115,35 +90,24 @@
         android:layout_marginStart="70dp"
         android:fontFamily="sans-serif-medium"
         android:padding="15dp"
-        android:text="Olá, João Silva"
+        android:text="@string/JSilva"
         android:textColor="@color/black"
         android:textSize="30sp"
-        tools:layout_editor_absoluteY="114dp" />
+        tools:layout_editor_absoluteY="114dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/Tchoice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="15dp"
-        android:text="Último Registo"
+        android:text="@string/UReg"
         android:textStyle="bold"
         android:textColor="@android:color/darker_gray"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="170dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="70 \nPul/min"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="261dp" />
+        tools:layout_editor_absoluteY="170dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/TConsRegistos"
@@ -151,8 +115,8 @@
         android:layout_height="150dp"
         android:layout_marginBottom="60dp"
         android:backgroundTint="@android:color/darker_gray"
-        android:drawableBottom="@mipmap/tensoes_foreground"
-        android:text="Consultar Registos"
+        android:drawableBottom="@drawable/img_2"
+        android:text="@string/CReg"
         android:textColor="@color/white"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"

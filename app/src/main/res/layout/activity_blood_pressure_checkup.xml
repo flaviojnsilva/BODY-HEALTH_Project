@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".BloodPressureCheckupActivity">
+
+    <TextView
+        android:id="@+id/bloodPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:padding="15dp"
+        android:text="@string/bloodPressure"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="40sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/bloodPressureCheckupRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bloodPressureCheckupRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:padding="15dp"
+        android:text="@string/checkupRegisterBloodPressure"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+
+        app:layout_constraintBottom_toTopOf="@id/last3RegistersBloodPressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bloodPressure" />
+
+    <TextView
+        android:id="@+id/last3RegistersBloodPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/last3RegistersBloodPressure"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toTopOf="@id/data1BloodPressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bloodPressureCheckupRegister" />
+
+    <Button
+        android:id="@+id/data1BloodPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:text="@string/data1BloodPressure"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toTopOf="@id/data2BloodPressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/last3RegistersBloodPressure" />
+
+    <Button
+
+        android:id="@+id/data2BloodPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:text="@string/data2BloodPressure"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toTopOf="@+id/data3BloodPressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/data1BloodPressure" />
+
+    <Button
+        android:id="@+id/data3BloodPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:text="@string/data3BloodPressure"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toTopOf="@+id/newRegisterBloodPressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/data2BloodPressure" />
+
+    <Button
+        android:id="@+id/newRegisterBloodPressure"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/grey"
+        android:drawableBottom="@drawable/ic_blood_pressure_new_register"
+        android:text="@string/newRegisterBloodPressure"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/previousRegistersBloodPressure"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/grey"
+        android:drawableBottom="@drawable/ic_blood_pressure_previous_register"
+        android:text="@string/previousRegistersBloodPressure"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
