@@ -129,7 +129,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/distanceDashboard" />
 
-
     <Button
         android:id="@+id/bloodPressureDashboard"
         android:layout_width="110dp"
