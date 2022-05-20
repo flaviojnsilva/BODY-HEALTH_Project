@@ -31,7 +31,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textBodyHealth"
-        app:srcCompat="@drawable/icon_body_health" />
+        app:srcCompat="@drawable/ic_body_health_bw" />
 
     <Button
         android:id="@+id/loginButton"

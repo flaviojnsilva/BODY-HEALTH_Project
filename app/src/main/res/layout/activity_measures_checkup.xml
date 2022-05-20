@@ -116,7 +116,7 @@
         android:layout_height="150dp"
         android:layout_marginBottom="60dp"
         android:backgroundTint="@android:color/darker_gray"
-        android:drawableBottom="@drawable/img_2"
+        android:drawableBottom="@drawable/ic_check_registers"
         android:text="@string/Rant"
         android:textColor="@color/white"
         android:textSize="12sp"

@@ -100,7 +100,7 @@
         android:layout_width="258dp"
         android:layout_height="115dp"
         android:backgroundTint="@android:color/darker_gray"
-        android:drawableLeft="@drawable/img_2"
+        android:drawableLeft="@drawable/ic_check_registers"
         android:text="@string/CReg"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"

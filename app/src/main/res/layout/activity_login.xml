@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_body_health" />
+        app:srcCompat="@drawable/ic_body_health_bw" />
 
     <TextView
         android:id="@+id/textLogin"
@@ -37,7 +37,7 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:background="@drawable/round_border"
-        android:drawableStart="@drawable/icon_email"
+        android:drawableStart="@drawable/ic_email"
         android:drawablePadding="16dp"
         android:hint="@string/emailLogin"
         android:padding="12dp"
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:background="@drawable/round_border"
-        android:drawableStart="@drawable/icon_lock"
+        android:drawableStart="@drawable/ic_lock"
         android:drawablePadding="16dp"
         android:hint="@string/passwordLogin"
         android:padding="12dp"

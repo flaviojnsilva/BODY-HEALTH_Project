@@ -2,32 +2,32 @@
     <!-- App Name -->
     <string name="app_name">BodyHealth</string>
 
-    <!-- WelcomeActivity -->
+    <!-- activity_welcome -->
     <string name="welcome">Bem-vindo à BodyHealth!</string>
     <string name="register">Registo</string>
     <string name="login">Login</string>
 
-    <!-- RegisterActivity -->
+    <!-- activity_register -->
     <string name="firstNameRegister">Inserir Primeiro Nome</string>
     <string name="lastNameRegister">Inserir Último Nome</string>
     <string name="emailRegister">Inserir E-mail</string>
     <string name="passwordRegister">Inserir Palavra-passe</string>
     <string name="passwordConfirmationRegister">Confirmar Palavra-passe</string>
 
-    <!-- LoginActivity -->
+    <!-- activity_login -->
     <string name="emailLogin">Inserir E-mail</string>
     <string name="passwordLogin">Inserir Palavra-passe</string>
     <string name="forgotPasswordLogin">Esqueceu-se da Palavra-passe?</string>
 
-    <!-- LogoutActivity -->
+    <!-- activity_logout -->
     <string name="byeLogout">Até já &#128578;</string>
     <string name="seeYouSoonLogout">Esperamos voltar a ver-te em breve!</string>
 
-    <!-- ForgottenPasswordActivity -->
+    <!-- activity_forgotten_password -->
     <string name="forgotPasswordFP">Esqueceu-se da Palavra-passe?</string>
     <string name="emailRegisterFP">Insira o e-mail de registo para a recuperar</string>
 
-    <!-- DashboardActivity -->
+    <!-- activity_dashboard -->
     <string name="profileDashboard">PERFIL</string>
     <string name="helloDashboard">Olá João Silva</string>
     <string name="timeActivityDashboard"><font fgcolor="#FF808080">Hoje fizeste</font><font fgcolor="#FF000000"> 7 min </font><font fgcolor="#FF808080">de atividade física</font></string>
@@ -38,7 +38,7 @@
     <string name="bloodPressureDashboard">Tensão Arterial</string>
     <string name="measuresDashboard">Medidas</string>
 
-    <!-- BloodPressureCheckupActivity -->
+    <!-- activity_blood_pressure_checkup -->
     <string name="bloodPressure">Tensão Arterial</string>
     <string name="checkupRegisterBloodPressure">Consultar Registo</string>
     <string name="last3RegistersBloodPressure">3 registos mais recentes:</string>
@@ -48,9 +48,34 @@
     <string name="newRegisterBloodPressure">Novo Registo</string>
     <string name="previousRegistersBloodPressure">Registos Anteriores</string>
 
+    <!-- activity_blood_pressure_dashboard -->
+    <string name="helloBloodPressure">Olá João Silva</string>
+    <string name="lastRegisterBloodPressure">Último registo:</string>
+    <string name="dataRegisterBloodPressure">- 07 de Março 2022, às 18:15</string>
+    <string name="pul_minBloodPressure"><font fgcolor="#FF000000" size="50">&#x2665; 70\n</font><font fgcolor="#FF808080" size="25">PUL/min</font></string>
+    <string name="maxBloodPressure"><font fgcolor="#FF000000" size="70">129\n</font><font fgcolor="#FF808080" size="20">mmHg</font></string>
+    <string name="minBloodPressure"><font fgcolor="#FF000000" size="70">83\n</font><font fgcolor="#FF808080" size="20">mmHg</font></string>
+    <string name="checkRegistersBloodPressure">Consultar Registos</string>
+
+    <!-- activity_blood_pressure_register -->
+    <string name="newRegister_BloodPressure">Novo Registo</string>
+    <string name="choiceTypeRegistersBloodPressure">Escolher uma das 3 opções:</string>
+    <string name="manualRegisterBloodPressure">REGISTO MANUAL</string>
+    <string name="voiceRegisterBloodPressure">REGISTO POR VOZ</string>
+    <string name="scanRegisterBloodPressure">REGISTO POR SCAN</string>
+
+    <!-- activity_diabetes_checkup -->
+    <string name="diabetes">Diabetes</string>
+    <string name="checkupRegisterDiabetes">Consultar Registo</string>
+    <string name="last3RegistersDiabetes">3 registos mais recentes:</string>
+    <string name="data1Diabetes">16/03/2022 às 16:45</string>
+    <string name="data2Diabetes">05/03/2022 às 18:40</string>
+    <string name="data3Diabetes">22/02/2022 às 09:15</string>
+    <string name="newRegisterDiabetes">Novo Registo</string>
+    <string name="previousRegistersDiabetes">Registos Anteriores</string>
+
 
     <!-- Buttons -->
-    <string name="choiceRegisterBloodPressure">Escolha uma das 3 opções</string>
     <string name="loginButton">ENTRAR</string>
     <string name="registerButton">REGISTAR</string>
     <string name="recoveryPasswordButton">RECUPERAR</string>
@@ -60,7 +85,6 @@
     <string name="TregVoz">REGISTO POR VOZ</string>
     <string name="TregScan">REGISTO POR SCAN</string>
     <string name="Rant">Registos Anteriores</string>
-    <string name="diabetes">Diabetes</string>
     <string name="TChoice">Escolha uma das 3 opções</string>
     <string name="NReg">Novo Registo</string>
     <string name="diab">Diabetes</string>

@@ -8,157 +8,168 @@
     tools:context=".BloodPressureDashboardActivity">
 
     <TextView
-        android:id="@+id/textView7"
-        android:layout_width="140dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="36dp"
-        android:padding="15dp"
-        android:text="mmHg"
-        android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="427dp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="140dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="240dp"
-        android:padding="15dp"
-        android:text="83"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:textSize="50sp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="338dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="140dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="36dp"
-        android:padding="15dp"
-        android:text="129"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="50sp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="338dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="140dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="240dp"
-        android:padding="15dp"
-        android:text="mmHg"
-        android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="427dp" />
-
-    <TextView
-        android:id="@+id/tchoice"
+        android:id="@+id/bloodPressure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="  - 18 de Março de 2022, às 22:00"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/Tchoice"
-        tools:layout_editor_absoluteX="5dp" />
-
-    <Button
-        android:id="@+id/TConsRegistos2"
-        android:layout_width="197dp"
-        android:layout_height="149dp"
-        android:layout_marginBottom="60dp"
-        android:backgroundTint="@android:color/darker_gray"
-        android:drawableBottom="@mipmap/t_consulta_foreground"
-        android:text="Novo Registo"
-        android:textColor="@color/white"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/TConsRegistos"
-        app:layout_constraintHorizontal_bias="0.083"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/Tensão"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-medium"
-        android:padding="30dp"
-        android:text="@string/Tensão"
+        android:padding="15dp"
+        android:text="@string/bloodPressure"
         android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@color/grey"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/emailRegisterFP"
+
+        app:layout_constraintBottom_toTopOf="@id/helloBloodPressure"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="NotSibling" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/Hello"
-        android:layout_width="wrap_content"
+        android:id="@+id/helloBloodPressure"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-medium"
-        android:padding="15dp"
-        android:text="Olá, João Silva"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteY="114dp" />
-
-    <TextView
-        android:id="@+id/Tchoice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="Último Registo"
-        android:textStyle="bold"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="170dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="70 \nPul/min"
-        android:textStyle="bold"
-        android:textAlignment="center"
+        android:padding="20dp"
+        android:text="@string/helloBloodPressure"
         android:textColor="@android:color/black"
         android:textSize="30sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/lastRegisterBloodPressure"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="261dp" />
+        app:layout_constraintTop_toBottomOf="@id/bloodPressure" />
+
+    <TextView
+        android:id="@+id/lastRegisterBloodPressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/lastRegisterBloodPressure"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/dataRegisterBloodPressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/helloBloodPressure" />
+
+    <TextView
+        android:id="@+id/dataRegisterBloodPressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/dataRegisterBloodPressure"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/pul_minBloodPressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastRegisterBloodPressure" />
+
+    <TextView
+        android:id="@+id/pul_minBloodPressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/pul_minBloodPressure"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/maxBloodPressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dataRegisterBloodPressure" />
+
+    <TextView
+        android:id="@+id/maxBloodPressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="start"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/maxBloodPressure"
+        android:textColor="@color/grey"
+
+        app:layout_constraintBottom_toTopOf="newRegisterBloodPressure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pul_minBloodPressure" />
+
+    <TextView
+        android:id="@+id/minBloodPressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="end"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/minBloodPressure"
+        android:textColor="@color/grey"
+
+        app:layout_constraintBottom_toTopOf="newRegisterBloodPressure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pul_minBloodPressure" />
 
     <Button
-        android:id="@+id/TConsRegistos"
-        android:layout_width="182dp"
+        android:id="@+id/newRegisterBloodPressure"
+        android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginBottom="60dp"
-        android:backgroundTint="@android:color/darker_gray"
-        android:drawableBottom="@mipmap/tensoes_foreground"
-        android:text="Consultar Registos"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/grey"
+        android:drawableBottom="@drawable/ic_blood_pressure_new_register"
+        android:text="@string/newRegisterBloodPressure"
+        android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="12sp"
+        android:textSize="13sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/minBloodPressure" />
+
+    <Button
+        android:id="@+id/checkRegistersBloodPressure"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/grey"
+        android:drawableBottom="@drawable/ic_check_registers"
+        android:text="@string/checkRegistersBloodPressure"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.684"
-        app:layout_constraintStart_toEndOf="@+id/TConsRegistos2" />
-
+        app:layout_constraintTop_toBottomOf="@id/minBloodPressure" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
