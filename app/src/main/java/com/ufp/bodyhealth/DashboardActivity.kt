@@ -11,21 +11,10 @@ import java.util.*
 
 class DashboardActivity : AppCompatActivity() {
 
-    private val userDatabase by lazy { UserDatabase.getDatabase(this).userDao() }
-    private val newUserResultLauncher =
-        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-            if (result.resultCode == Activity.RESULT_OK) {
-                val userText = result.data?.getStringExtra("user_text")
-                val userDateAdded = Date()
-                val newUser = User(0, "andre", userDateAdded as java.sql.Date)
-                lifecycleScope.launch {
-                    userDatabase.addUser(newUser)
-                }
-            }
-        }
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+        }
     }
 }
 

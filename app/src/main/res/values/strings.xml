@@ -44,16 +44,20 @@
     <string name="recoveryPasswordButton">RECUPERAR</string>
     <string name="loginAgainButton">ENTRAR DE NOVO</string>
     <string name="Tensão">Tensão Arterial</string>
-    <string name="TRegisto">Novo Registo</string>
     <string name="Tchoice">Escolha uma das 3 Opções</string>
-    <string name="TConsultar">Consultar Registos</string>
-    <string name="TConsRegistos">Consultar Registos</string>
     <string name="TregManual">REGISTO MANUAL</string>
     <string name="TregVoz">REGISTO POR VOZ</string>
     <string name="TregScan">REGISTO POR SCAN</string>
-    <string name="TConsulta">Consultar Registo</string>
     <string name="TConsultaReg">Ultimos 3 registos</string>
-    <string name="tConsultaRegistos">Registos Anteriores</string>
+    <string name="Rant">Registos Anteriores</string>
     <string name="diabetes">Diabetes</string>
     <string name="TChoice">Escolha uma das 3 opções</string>
+    <string name="NReg">Novo Registo</string>
+    <string name="CReg">Consultar Registos</string>
+    <string name="diab">Diabetes</string>
+    <string name="Data1">06/03/2022 às 16:45</string>
+    <string name="data2">05/03/2022 às 16:45</string>
+    <string name="data3">04/03/2022 às 16:45</string>
+    <string name="UReg">Último Registo</string>
+    <string name="JSilva">Olá, João Silva</string>
 </resources>

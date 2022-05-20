@@ -13,8 +13,8 @@
         android:layout_height="149dp"
         android:layout_marginBottom="60dp"
         android:backgroundTint="@android:color/darker_gray"
-        android:drawableBottom="@mipmap/reg_anterior_foreground"
-        android:text="Novo Registo"
+        android:drawableBottom="@drawable/img"
+        android:text="@string/NReg"
         android:textColor="@color/white"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,12 +27,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/darker_gray"
-        android:text=""
+        android:text="@string/data3"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="465dp" />
+        tools:layout_editor_absoluteY="453dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
 
@@ -40,12 +40,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/darker_gray"
-        android:text=""
+        android:text="@string/data2"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="389dp" />
+        tools:layout_editor_absoluteY="377dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/Tensão"
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:padding="30dp"
-        android:text="Diabetes"
+        android:text="@string/diab"
         android:textAlignment="center"
         android:textColor="@android:color/darker_gray"
         android:textSize="40sp"
@@ -72,13 +72,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:padding="15dp"
-        android:text="@string/TConsulta"
+        android:text="@string/CReg"
         android:textColor="@color/black"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="114dp" />
+        tools:layout_editor_absoluteY="114dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/Tchoice"
@@ -91,19 +92,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="201dp" />
+        tools:layout_editor_absoluteY="201dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/TregManual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/darker_gray"
-        android:text=""
+        android:text="@string/Data1"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="313dp" />
+        tools:layout_editor_absoluteY="296dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/TConsRegistos"
@@ -111,8 +113,8 @@
         android:layout_height="150dp"
         android:layout_marginBottom="60dp"
         android:backgroundTint="@android:color/darker_gray"
-        android:drawableBottom="@mipmap/tensoes_foreground"
-        android:text="Consultar Registos"
+        android:drawableBottom="@drawable/img_1"
+        android:text="@string/CReg"
         android:textColor="@color/white"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
