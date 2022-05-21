@@ -2,6 +2,7 @@ package com.ufp.bodyhealth
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 
 class MeasuresRegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

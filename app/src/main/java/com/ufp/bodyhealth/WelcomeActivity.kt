@@ -1,37 +1,30 @@
 package com.ufp.bodyhealth
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-
-/*
-import User
-import android.app.Activity
-import androidx.activity.result.contract.ActivityResultContracts
-import androidx.lifecycle.lifecycleScope
-import kotlinx.coroutines.launch
-import java.util.* */
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
 
 class WelcomeActivity : AppCompatActivity() {
 
-    /*private val userDatabase by lazy {
-        UserDatabase.getDatabase(this).userDao()
-
-        private val newUserResultLauncher =
-            registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-                if (result.resultCode == Activity.RESULT_OK) {
-                    val userText = result.data?.getStringExtra("user_text")
-                    val userDateAdded = Date()
-                    val newUser = User(0, "andre", userDateAdded as java.sql.Date)
-                    lifecycleScope.launch {
-                        userDatabase.addUser(newUser)
-                    }
-                }
-            }
-    }*/
-
+    @Override
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
+
+        val login = findViewById<Button>(R.id.loginButton)
+
+        val register = findViewById<Button>(R.id.registerButton)
+
+        login.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+
+        register.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
