@@ -100,7 +100,7 @@
         android:layout_height="150dp"
         android:layout_marginBottom="50dp"
         android:backgroundTint="@color/grey"
-        android:drawableBottom="@drawable/ic_check_registers"
+        android:drawableBottom="@drawable/ic_registers_check"
         android:text="@string/checkRegistersBloodPressure"
         android:textAlignment="center"
         android:textColor="@color/white"

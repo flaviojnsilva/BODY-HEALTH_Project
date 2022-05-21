@@ -114,7 +114,6 @@
         android:text="@string/maxBloodPressure"
         android:textColor="@color/grey"
 
-        app:layout_constraintBottom_toTopOf="newRegisterBloodPressure"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/pul_minBloodPressure" />
 
@@ -132,8 +131,7 @@
         android:text="@string/minBloodPressure"
         android:textColor="@color/grey"
 
-        app:layout_constraintBottom_toTopOf="newRegisterBloodPressure"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/pul_minBloodPressure" />
 
     <Button
@@ -144,7 +142,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="50dp"
         android:backgroundTint="@color/grey"
-        android:drawableBottom="@drawable/ic_blood_pressure_new_register"
+        android:drawableBottom="@drawable/ic_new_register_blood_pressure"
         android:text="@string/newRegisterBloodPressure"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -162,7 +160,7 @@
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="50dp"
         android:backgroundTint="@color/grey"
-        android:drawableBottom="@drawable/ic_check_registers"
+        android:drawableBottom="@drawable/ic_registers_check"
         android:text="@string/checkRegistersBloodPressure"
         android:textAlignment="center"
         android:textColor="@color/white"

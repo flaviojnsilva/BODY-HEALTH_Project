@@ -1,18 +1,20 @@
 package com.ufp.bodyhealth
 
-import User
-import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+
+/*
+import User
+import android.app.Activity
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
-import java.util.*
+import java.util.* */
 
 
 class WelcomeActivity : AppCompatActivity() {
 
-    private val userDatabase by lazy {
+    /*private val userDatabase by lazy {
         UserDatabase.getDatabase(this).userDao()
 
         private val newUserResultLauncher =
@@ -26,7 +28,7 @@ class WelcomeActivity : AppCompatActivity() {
                     }
                 }
             }
-    }
+    }*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

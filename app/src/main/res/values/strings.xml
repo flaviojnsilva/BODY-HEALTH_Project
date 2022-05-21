@@ -27,6 +27,15 @@
     <string name="forgotPasswordFP">Esqueceu-se da Palavra-passe?</string>
     <string name="emailRegisterFP">Insira o e-mail de registo para a recuperar</string>
 
+    <!-- activity_profile -->
+    <string name="myProfile">O Meu Perfil</string>
+    <string name="nameProfile">João Silva</string>
+    <string name="emailProfile">joaosilva@gmail.com</string>
+    <string name="passwordProfile">**********</string>
+    <string name="genderProfile">Masculino</string>
+    <string name="phoneNumberProfile">+351 911 222 333</string>
+    <string name="birthdayProfile">01/01/2000</string>
+
     <!-- activity_dashboard -->
     <string name="profileDashboard">PERFIL</string>
     <string name="helloDashboard">Olá João Silva</string>
@@ -74,20 +83,63 @@
     <string name="newRegisterDiabetes">Novo Registo</string>
     <string name="previousRegistersDiabetes">Registos Anteriores</string>
 
+    <!-- activity_diabetes_dashboard -->
+    <string name="helloDiabetes">Olá João Silva</string>
+    <string name="lastRegisterDiabetes">Último registo:</string>
+    <string name="dataRegisterDiabetes">- 07 de Março 2022, às 18:15</string>
+    <string name="mg_dl_Diabetes"><font fgcolor="#FF000000" size="50">🩸90\n</font><font fgcolor="#FF808080" size="25">mg/dl</font></string>
+
+    <!-- activity_diabetes_register -->
+    <string name="newRegister_Diabetes">Novo Registo</string>
+    <string name="choiceTypeRegistersDiabetes">Escolher uma das 3 opções:</string>
+    <string name="manualRegisterDiabetes">REGISTO MANUAL</string>
+    <string name="voiceRegisterDiabetes">REGISTO POR VOZ</string>
+    <string name="scanRegisterDiabetes">REGISTO POR SCAN</string>
+    <string name="checkRegistersDiabetes">Consultar Registos</string>
+
+    <!-- activity_measures_checkup -->
+    <string name="measures">Medidas</string>
+    <string name="checkupRegisterMeasures">Consultar Registo</string>
+    <string name="last3RegistersMeasures">3 registos mais recentes:</string>
+    <string name="data1Measures">16/03/2022 às 16:45</string>
+    <string name="data2Measures">05/03/2022 às 18:40</string>
+    <string name="data3Measures">22/02/2022 às 09:15</string>
+    <string name="newRegisterMeasures">Novo Registo</string>
+    <string name="previousRegistersMeasures">Registos Anteriores</string>
+
+    <!-- activity_measures_dashboard -->
+    <string name="helloMeasures">Olá João Silva</string>
+    <string name="lastRegisterMeasures">Último registo:</string>
+    <string name="dataRegisterMeasures">- 07 de Março 2022, às 18:15</string>
+    <string name="imcMeasures"><font fgcolor="#FF000000" size="50">24,2\n</font><font fgcolor="#FF808080" size="25">IMC</font></string>
+    <string name="maxMeasures"><font fgcolor="#FF000000" size="30">1,84\n</font><font fgcolor="#FF808080" size="20">m</font></string>
+    <string name="minMeasures"><font fgcolor="#FF000000" size="30">82,25\n</font><font fgcolor="#FF808080" size="20">kg</font></string>
+    <string name="checkRegistersMeasures">Consultar Registos</string>
+
+    <!-- activity_measures_register -->
+    <string name="newRegister_Measures">Novo Registo</string>
+    <string name="choiceTypeRegistersMeasures">Escolher uma das 3 opções:</string>
+    <string name="manualRegisterMeasures">REGISTO MANUAL</string>
+    <string name="voiceRegisterMeasures">REGISTO POR VOZ</string>
+    <string name="scanRegisterMeasures">REGISTO POR SCAN</string>
+
+    <!-- activity_resume_activity -->
+    <string name="activityResumeActivity">Atividade</string>
+    <string name="activityWeekResumeActivity">SEMANA 10 – 2022 \n 07 a 13 de MARÇO</string>
+    <string name="mondayResumeActivity">SEGUNDA\n\n<font fgcolor="#B22222">7510 / 8000 Passos\n</font> <font fgcolor="#008000">6,4 / 6,5 KM\n</font><font fgcolor="#0047AB">415 / 400 KCAL</font></string>
+    <string name="tuesdayResumeActivity">TERÇA\n\n<font fgcolor="#B22222">7440 / 8000 Passos\n</font> <font fgcolor="#008000">6,3 / 6,5 KM\n</font><font fgcolor="#0047AB">490 / 400 KCAL</font></string>
+    <string name="wednesdayResumeActivity">QUARTA\n\n<font fgcolor="#B22222">8943 / 8000 Passos\n</font> <font fgcolor="#008000">7,7 / 6,5 KM\n</font><font fgcolor="#0047AB">516 / 400 KCAL</font></string>
+    <string name="thursdayResumeActivity">QUINTA\n\n<font fgcolor="#B22222">3134 / 8000 Passos\n</font> <font fgcolor="#008000">2,4 / 6,5 KM\n</font><font fgcolor="#0047AB">322 / 400 KCAL</font></string>
+    <string name="fridayResumeActivity">SEXTA\n\n<font fgcolor="#B22222">11101 / 8000 Passos\n</font> <font fgcolor="#008000">8,9 / 6,5 KM\n</font><font fgcolor="#0047AB">828 / 400 KCAL</font></string>
+    <string name="saturdayResumeActivity">SÁBADO\n\n<font fgcolor="#B22222">11011 / 8000 Passos\n</font> <font fgcolor="#008000">9,2 / 6,5 KM\n</font><font fgcolor="#0047AB">670 / 400 KCAL</font></string>
+    <string name="sundayResumeActivity">DOMINGO\n\n<font fgcolor="#B22222">247 / 8000 Passos\n</font> <font fgcolor="#008000">0,2 / 6,5 KM\n</font><font fgcolor="#0047AB">21 / 400 KCAL</font></string>
+    <string name="othersResumeActivity">Outros Registos</string>
 
     <!-- Buttons -->
     <string name="loginButton">ENTRAR</string>
     <string name="registerButton">REGISTAR</string>
     <string name="recoveryPasswordButton">RECUPERAR</string>
     <string name="loginAgainButton">ENTRAR DE NOVO</string>
-    <string name="Tchoice">Escolha uma das 3 Opções</string>
-    <string name="TregManual">REGISTO MANUAL</string>
-    <string name="TregVoz">REGISTO POR VOZ</string>
-    <string name="TregScan">REGISTO POR SCAN</string>
-    <string name="Rant">Registos Anteriores</string>
-    <string name="TChoice">Escolha uma das 3 opções</string>
-    <string name="NReg">Novo Registo</string>
-    <string name="diab">Diabetes</string>
-    <string name="UReg">Último Registo</string>
-    <string name="JSilva">Olá, João Silva</string>
+    <string name="logoutButton">LOGOUT</string>
+
 </resources>

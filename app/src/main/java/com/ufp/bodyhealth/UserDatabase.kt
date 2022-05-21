@@ -1,4 +1,4 @@
-package com.ufp.bodyhealth
+/*package com.ufp.bodyhealth
 
 import User
 import android.content.Context
@@ -54,4 +54,4 @@ abstract class UserDatabase : RoomDatabase() {
                 .build()
         }
     }
-}
+}*/

@@ -5,124 +5,135 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".BloodPressureDashboardActivity">
+    tools:context=".DiabetesDashboardActivity">
 
     <TextView
-        android:id="@+id/textView7"
-        android:layout_width="140dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="28dp"
-        android:padding="15dp"
-        android:text="mg/dl"
-        android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="374dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="140dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="28dp"
-        android:padding="15dp"
-        android:text="129"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="285dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/tchoice"
+        android:id="@+id/diabetes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Data1"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/Tchoice"
-        tools:layout_editor_absoluteX="11dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/TConsRegistos2"
-        android:layout_width="197dp"
-        android:layout_height="149dp"
-        android:layout_marginBottom="60dp"
-        android:backgroundTint="@android:color/darker_gray"
-        android:drawableBottom="@drawable/ic_diabetes_new_register"
-        android:text="@string/NReg"
-        android:textColor="@color/white"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/TConsRegistos"
-        app:layout_constraintHorizontal_bias="0.083"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/Tensão"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-medium"
-        android:padding="30dp"
+        android:padding="15dp"
         android:text="@string/diabetes"
         android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@color/grey"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/emailRegisterFP"
+
+        app:layout_constraintBottom_toTopOf="@id/helloDiabetes"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="NotSibling" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/Hello"
-        android:layout_width="wrap_content"
+        android:id="@+id/helloDiabetes"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-medium"
-        android:padding="15dp"
-        android:text="@string/JSilva"
-        android:textColor="@color/black"
+        android:padding="20dp"
+        android:text="@string/helloDiabetes"
+        android:textColor="@android:color/black"
         android:textSize="30sp"
-        tools:layout_editor_absoluteY="114dp"
-        tools:ignore="MissingConstraints" />
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/lastRegisterDiabetes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/diabetes" />
 
     <TextView
-        android:id="@+id/Tchoice"
-        android:layout_width="wrap_content"
+        android:id="@+id/lastRegisterDiabetes"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="@string/UReg"
-        android:textStyle="bold"
-        android:textColor="@android:color/darker_gray"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/lastRegisterDiabetes"
+        android:textColor="@color/grey"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="170dp"
-        tools:ignore="MissingConstraints" />
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/dataRegisterDiabetes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/helloDiabetes" />
+
+    <TextView
+        android:id="@+id/dataRegisterDiabetes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/dataRegisterDiabetes"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/mg_dl_Diabetes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastRegisterDiabetes" />
+
+    <TextView
+        android:id="@+id/mg_dl_Diabetes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/mg_dl_Diabetes"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dataRegisterDiabetes" />
 
     <Button
-        android:id="@+id/TConsRegistos"
-        android:layout_width="182dp"
+        android:id="@+id/newRegisterDiabetes"
+        android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginBottom="60dp"
-        android:backgroundTint="@android:color/darker_gray"
-        android:drawableBottom="@drawable/ic_check_registers"
-        android:text="@string/CReg"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/grey"
+        android:drawableBottom="@drawable/ic_new_register_diabetes"
+        android:text="@string/newRegisterDiabetes"
+        android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="12sp"
+        android:textSize="13sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mg_dl_Diabetes" />
+
+    <Button
+        android:id="@+id/checkRegistersDiabetes"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/grey"
+        android:drawableBottom="@drawable/ic_registers_check"
+        android:text="@string/checkRegistersDiabetes"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.684"
-        app:layout_constraintStart_toEndOf="@+id/TConsRegistos2" />
-
+        app:layout_constraintTop_toBottomOf="@id/mg_dl_Diabetes" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

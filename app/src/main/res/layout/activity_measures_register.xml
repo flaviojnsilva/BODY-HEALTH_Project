@@ -5,105 +5,110 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".BloodPressureRegisterActivity"
-    tools:ignore="ExtraText">
-
-    <Button
-        android:id="@+id/TregScan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/darker_gray"
-        android:text="@string/TregScan"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="465dp" />
-
-    <Button
-
-        android:id="@+id/TregVoz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/darker_gray"
-        android:text="@string/TregVoz"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="389dp" />
+    tools:context=".MeasuresCheckupActivity">
 
     <TextView
-        android:id="@+id/Tensão"
+        android:id="@+id/measures"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
-        android:padding="30dp"
-        android:text="Medidas"
+        android:padding="15dp"
+        android:text="@string/measures"
         android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@color/grey"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/emailRegisterFP"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="NotSibling" />
 
+        app:layout_constraintBottom_toTopOf="@id/newRegister_Measures"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/TRegisto"
+        android:id="@+id/newRegister_Measures"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:padding="15dp"
-        android:text="Novo Registo"
+        android:text="@string/newRegister_Measures"
         android:textColor="@color/black"
         android:textSize="30sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/choiceTypeRegistersMeasures"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="114dp" />
+        app:layout_constraintTop_toBottomOf="@id/measures" />
 
     <TextView
-        android:id="@+id/Tchoice"
+        android:id="@+id/choiceTypeRegistersMeasures"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="15dp"
-        android:text="@string/TChoice"
-        android:textColor="@android:color/darker_gray"
+        android:text="@string/choiceTypeRegistersMeasures"
+        android:textColor="@color/grey"
         android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/manualRegisterMeasures"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="216dp" />
+        app:layout_constraintTop_toBottomOf="@id/newRegister_Measures" />
 
     <Button
-        android:id="@+id/TregManual"
+        android:id="@+id/manualRegisterMeasures"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/darker_gray"
-        android:text="@string/TregManual"
+        android:backgroundTint="@color/grey"
+        android:text="@string/manualRegisterMeasures"
         android:textColor="@color/white"
+
+        app:layout_constraintBottom_toTopOf="@id/voiceRegisterMeasures"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="313dp" />
+        app:layout_constraintTop_toBottomOf="@id/choiceTypeRegistersMeasures" />
 
     <Button
-        android:id="@+id/TConsRegistos"
-        android:layout_width="258dp"
-        android:layout_height="115dp"
-        android:backgroundTint="@android:color/darker_gray"
-        android:drawableLeft="@mipmap/tensoes_foreground"
-        android:text="@string/TConsRegistos"
+        android:id="@+id/voiceRegisterMeasures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:text="@string/voiceRegisterMeasures"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="562dp" />
-    ... />
 
+        app:layout_constraintBottom_toTopOf="@+id/scanRegisterMeasures"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/manualRegisterMeasures" />
+
+    <Button
+        android:id="@+id/scanRegisterMeasures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:text="@string/scanRegisterMeasures"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toTopOf="@+id/checkRegistersMeasures"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/voiceRegisterMeasures" />
+
+    <Button
+        android:id="@+id/checkRegistersMeasures"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/grey"
+        android:drawableBottom="@drawable/ic_registers_check"
+        android:text="@string/checkRegistersMeasures"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scanRegisterMeasures" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,123 +7,123 @@
     android:background="@color/white"
     tools:context=".MeasuresCheckupActivity">
 
+    <TextView
+        android:id="@+id/measures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:padding="15dp"
+        android:text="@string/measures"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="40sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/checkupRegisterMeasures"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/checkupRegisterMeasures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:padding="15dp"
+        android:text="@string/checkupRegisterMeasures"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/last3RegistersMeasures"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/measures" />
+
+    <TextView
+        android:id="@+id/last3RegistersMeasures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/last3RegistersMeasures"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/data1Measures"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkupRegisterMeasures" />
+
     <Button
-        android:id="@+id/TConsRegistos2"
-        android:layout_width="197dp"
-        android:layout_height="149dp"
-        android:layout_marginBottom="60dp"
-        android:backgroundTint="@android:color/darker_gray"
-        android:drawableBottom="@"
-        android:text="@string/NReg"
+        android:id="@+id/data1Measures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:text="@string/data1Measures"
         android:textColor="@color/white"
-        android:textSize="12sp"
+
+        app:layout_constraintBottom_toTopOf="@id/data2Measures"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/last3RegistersMeasures" />
+
+    <Button
+        android:id="@+id/data2Measures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:text="@string/data2Measures"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toTopOf="@+id/data3Measures"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/data1Measures" />
+
+    <Button
+        android:id="@+id/data3Measures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:text="@string/data3Measures"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toTopOf="@+id/newRegisterMeasures"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/data2Measures" />
+
+    <Button
+        android:id="@+id/newRegisterMeasures"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/grey"
+        android:drawableBottom="@drawable/ic_new_register_measures"
+        android:text="@string/newRegisterMeasures"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/TConsRegistos"
-        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/TregScan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/darker_gray"
-        android:text="@string/data2"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="465dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-
-        android:id="@+id/TregVoz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/darker_gray"
-        android:text="@string/data2"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="389dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/Tensão"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:padding="30dp"
-        android:text="Medidas"
-        android:textAlignment="center"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/emailRegisterFP"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="NotSibling" />
-
-
-    <TextView
-        android:id="@+id/TRegisto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:padding="15dp"
-        android:text="@string/CReg"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="114dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/Tchoice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="@string/TConsultaReg"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="201dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/TregManual"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/darker_gray"
-        android:text="@string/Data1"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="313dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/TConsRegistos"
-        android:layout_width="182dp"
+        android:id="@+id/previousRegistersMeasures"
+        android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginBottom="60dp"
-        android:backgroundTint="@android:color/darker_gray"
-        android:drawableBottom="@drawable/ic_check_registers"
-        android:text="@string/Rant"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/grey"
+        android:drawableBottom="@drawable/ic_registers_previous"
+        android:text="@string/previousRegistersMeasures"
+        android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.684"
-        app:layout_constraintStart_toEndOf="@+id/TConsRegistos2" />
+        android:textSize="13sp"
 
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

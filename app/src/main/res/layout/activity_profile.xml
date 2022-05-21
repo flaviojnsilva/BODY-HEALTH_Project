@@ -1,6 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/myProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:padding="15dp"
+        android:text="@string/myProfile"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="45sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/iconProfileEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconProfileEdit"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+
+        app:layout_constraintBottom_toTopOf="@id/nameProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myProfile"
+        app:srcCompat="@drawable/ic_profile_edit" />
+
+    <TextView
+        android:id="@+id/nameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/nameProfile"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/emailProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iconProfileEdit" />
+
+    <EditText
+        android:id="@+id/emailProfile"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_email"
+        android:drawableEnd="@drawable/ic_edit"
+        android:drawablePadding="16dp"
+        android:hint="@string/emailProfile"
+        android:padding="12dp"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toTopOf="@id/passwordProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myProfile" />
+
+    <EditText
+        android:id="@+id/passwordProfile"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawableEnd="@drawable/ic_edit"
+        android:drawablePadding="16dp"
+        android:hint="@string/passwordProfile"
+        android:padding="12dp"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toTopOf="@id/genderProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailProfile" />
+
+    <EditText
+        android:id="@+id/genderProfile"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_gender"
+        android:drawableEnd="@drawable/ic_edit"
+        android:drawablePadding="16dp"
+        android:hint="@string/genderProfile"
+        android:padding="12dp"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toTopOf="@id/phoneNumberProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordProfile" />
+
+    <EditText
+        android:id="@+id/phoneNumberProfile"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_phone_number"
+        android:drawableEnd="@drawable/ic_edit"
+        android:drawablePadding="16dp"
+        android:hint="@string/phoneNumberProfile"
+        android:padding="12dp"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toTopOf="@id/birthdayProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderProfile" />
+
+    <EditText
+        android:id="@+id/birthdayProfile"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_calendar"
+        android:drawableEnd="@drawable/ic_edit"
+        android:drawablePadding="16dp"
+        android:hint="@string/birthdayProfile"
+        android:padding="12dp"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toTopOf="@id/logoutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberProfile" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_background"
+        android:drawableEnd="@drawable/ic_logout"
+        android:fontFamily="sans-serif"
+        android:text="@string/logoutButton"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/birthdayProfile" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

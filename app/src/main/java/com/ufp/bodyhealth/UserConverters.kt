@@ -1,4 +1,4 @@
-package com.ufp.bodyhealth
+/*package com.ufp.bodyhealth
 
 import android.arch.persistence.room.TypeConverter
 import java.sql.Date
@@ -13,4 +13,4 @@ class UserConverters {
     fun dateToTimestamp(date: Date?): Long? {
         return date?.time
     }
-}
+}*/
