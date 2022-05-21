@@ -10,38 +10,58 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BodyHealth">
         <activity
-            android:name=".MeasuresDashboardActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MeasuresCheckupActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MeasuresRegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DiabetesDashboardActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DiabetesCheckupActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DiabetesRegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".BloodPressureDashboardActivity"
+            android:name=".ActivityResumeActivity"
             android:exported="false" />
         <activity
             android:name=".BloodPressureCheckupActivity"
             android:exported="false" />
         <activity
+            android:name=".BloodPressureDashboardActivity"
+            android:exported="false" />
+        <activity
             android:name=".BloodPressureRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DiabetesCheckupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DiabetesDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DiabetesRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgottenPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MeasuresCheckupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MeasuresDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MeasuresRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".WelcomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
