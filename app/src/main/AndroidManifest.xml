@@ -10,6 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BodyHealth">
         <activity
+            android:name=".TesteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".testeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_teste"
+            android:theme="@style/Theme.BodyHealth.NoActionBar" />
+        <activity
+            android:name=".teste"
+            android:exported="false"
+            android:label="@string/title_activity_teste"
+            android:theme="@style/Theme.BodyHealth.NoActionBar" />
+        <activity
             android:name=".ActivityResumeActivity"
             android:exported="false" />
         <activity
@@ -62,6 +75,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
