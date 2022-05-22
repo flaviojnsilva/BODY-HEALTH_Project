@@ -65,10 +65,6 @@ class RegisterActivity : AppCompatActivity() {
                 .show()
             return
         }
-        // If all credential are correct
-        // We call createUserWithEmailAndPassword
-        // using auth object and pass the
-        // email and pass in it.
         mAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
             if (it.isSuccessful) {
                 Toast.makeText(this, "Successfully Singed Up", Toast.LENGTH_SHORT).show()
