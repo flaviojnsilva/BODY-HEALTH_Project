@@ -36,7 +36,17 @@ class LoginActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         btnLogin.setOnClickListener {
-            login()
+            val email = etEmail.text.toString()
+            val pass = etPass.text.toString()
+
+            auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
+                if (it.isSuccessful) {
+                    Toast.makeText(this, "Successfully LoggedIn", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, DashboardActivity::class.java)
+                    startActivity(intent)
+                } else
+                    Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
+            }
         }
 
         tvforgottenPass.setOnClickListener {
@@ -45,18 +55,5 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    private fun login() {
-        val email = etEmail.text.toString()
-        val pass = etPass.text.toString()
-        // calling signInWithEmailAndPassword(email, pass)
-        // function using Firebase auth object
-        // On successful response Display a Toast
-        auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
-            if (it.isSuccessful) {
-                Toast.makeText(this, "Successfully LoggedIn", Toast.LENGTH_SHORT).show()
-            } else
-                Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
-        }
-    }
 
 }

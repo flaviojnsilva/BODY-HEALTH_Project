@@ -13,7 +13,7 @@ class BloodPressureDashboardActivity : AppCompatActivity() {
         val newRegister = findViewById<Button>(R.id.newRegisterBloodPressure)
 
         newRegister.setOnClickListener {
-            val intent = Intent(this, MeasuresRegisterActivity::class.java)
+            val intent = Intent(this, BloodPressureRegisterActivity::class.java)
             startActivity(intent)
         }
 
