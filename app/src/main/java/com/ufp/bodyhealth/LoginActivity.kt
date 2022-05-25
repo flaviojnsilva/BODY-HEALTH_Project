@@ -41,11 +41,11 @@ class LoginActivity : AppCompatActivity() {
 
             auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
                 if (it.isSuccessful) {
-                    Toast.makeText(this, "Successfully LoggedIn", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Login com Sucesso!", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this, DashboardActivity::class.java)
                     startActivity(intent)
                 } else
-                    Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Login Falhado!", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -54,6 +54,4 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
-
 }

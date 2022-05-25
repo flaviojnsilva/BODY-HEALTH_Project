@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".ProfileActivity">
 
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_background"
+        android:fontFamily="sans-serif"
+        android:text="@string/gravar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/logoutButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/birthdayProfile" />
+
     <TextView
         android:id="@+id/myProfile"
         android:layout_width="wrap_content"
@@ -149,10 +164,9 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/saveButton"
         app:layout_constraintTop_toBottomOf="@id/birthdayProfile" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

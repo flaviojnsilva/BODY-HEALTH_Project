@@ -11,11 +11,11 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="@dimen/margin_big"
-
         app:layout_constraintBottom_toTopOf="@id/profileDashboard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"
         app:srcCompat="@drawable/ic_profile" />
 
     <TextView
@@ -74,6 +74,7 @@
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:text="@string/stepsNumberDashboard"
+        android:clickable="true"
         android:textColor="@android:color/black"
         android:textSize="100sp"
 

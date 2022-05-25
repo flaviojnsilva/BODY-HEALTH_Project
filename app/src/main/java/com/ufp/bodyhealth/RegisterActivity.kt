@@ -1,5 +1,6 @@
 package com.ufp.bodyhealth
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -49,21 +50,24 @@ class RegisterActivity : AppCompatActivity() {
 
         // check pass
         if (email.isBlank() || pass.isBlank() || confirmPassword.isBlank()) {
-            Toast.makeText(this, "Email and Password can't be blank", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Por favor preencha os dados!", Toast.LENGTH_SHORT).show()
             return
         }
 
         if (pass != confirmPassword) {
-            Toast.makeText(this, "Password and Confirm Password do not match", Toast.LENGTH_SHORT)
+            Toast.makeText(this, "Confirmação password errada!", Toast.LENGTH_SHORT)
                 .show()
             return
         }
         mAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
             if (it.isSuccessful) {
-                Toast.makeText(this, "Successfully Singed Up", Toast.LENGTH_SHORT).show()
-                finish()
+                Toast.makeText(this, "Registo com sucesso!", Toast.LENGTH_SHORT).show()
+                btnSignUp.setOnClickListener {
+                    val intent = Intent(this, DashboardActivity::class.java)
+                    startActivity(intent)
+                }
             } else {
-                Toast.makeText(this, "Singed Up Failed!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Registo Falhado!", Toast.LENGTH_SHORT).show()
             }
         }
     }
