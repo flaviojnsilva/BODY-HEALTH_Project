@@ -17,7 +17,7 @@
         <entry key="app/src/main/res/layout/activity_blood_pressure_checkup.xml" value="0.16262304333673008" />
         <entry key="app/src/main/res/layout/activity_blood_pressure_dashboard.xml" value="0.24642944335937503" />
         <entry key="app/src/main/res/layout/activity_blood_pressure_register.xml" value="0.24365942028985507" />
-        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_dconsulta.xml" value="0.18719635009765628" />
         <entry key="app/src/main/res/layout/activity_ddashboard.xml" value="0.316253662109375" />
         <entry key="app/src/main/res/layout/activity_diabetes_checkup.xml" value="0.15625" />
@@ -36,7 +36,7 @@
         <entry key="app/src/main/res/layout/activity_measures_dashboard.xml" value="0.24365942028985507" />
         <entry key="app/src/main/res/layout/activity_measures_register.xml" value="0.24365942028985507" />
         <entry key="app/src/main/res/layout/activity_mreg.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.24365942028985507" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_reg_diabetes.xml" value="0.2776268115942029" />
         <entry key="app/src/main/res/layout/activity_reg_tensao.xml" value="0.28830718994140625" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.2840577719868093" />

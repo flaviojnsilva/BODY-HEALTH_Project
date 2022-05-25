@@ -29,8 +29,8 @@
 
     <!-- activity_profile -->
     <string name="myProfile">O Meu Perfil</string>
-    <string name="nameProfile">João Silva</string>
-    <string name="emailProfile">joaosilva@gmail.com</string>
+    <string name="nameProfile">Pedro Silva</string>
+    <string name="emailProfile">pedrosilva@gmail.com</string>
     <string name="passwordProfile">**********</string>
     <string name="genderProfile">Masculino</string>
     <string name="phoneNumberProfile">+351 911 222 333</string>
@@ -38,7 +38,7 @@
 
     <!-- activity_dashboard -->
     <string name="profileDashboard">PERFIL</string>
-    <string name="helloDashboard">Olá João Silva</string>
+    <string name="helloDashboard">Olá Pedro Silva</string>
     <string name="timeActivityDashboard"><font fgcolor="#FF808080">Hoje fizeste</font><font fgcolor="#FF000000"> 7 min </font><font fgcolor="#FF808080">de atividade física</font></string>
     <string name="stepsNumberDashboard"><font size="100">500 \n</font><font fgcolor="#FF808080" size="50">PASSOS</font></string>
     <string name="distanceDashboard"><font size="25">Distância\n</font><font fgcolor="#FF000000" size="20">0,350 </font><font fgcolor="#FF808080" size="20">m</font></string>
@@ -58,7 +58,7 @@
     <string name="previousRegistersBloodPressure">Registos Anteriores</string>
 
     <!-- activity_blood_pressure_dashboard -->
-    <string name="helloBloodPressure">Olá João Silva</string>
+    <string name="helloBloodPressure">Olá Pedro Silva</string>
     <string name="lastRegisterBloodPressure">Último registo:</string>
     <string name="dataRegisterBloodPressure">- 07 de Março 2022, às 18:15</string>
     <string name="pul_minBloodPressure"><font fgcolor="#FF000000" size="50">&#x2665; 70\n</font><font fgcolor="#FF808080" size="25">PUL/min</font></string>
@@ -84,7 +84,7 @@
     <string name="previousRegistersDiabetes">Registos Anteriores</string>
 
     <!-- activity_diabetes_dashboard -->
-    <string name="helloDiabetes">Olá João Silva</string>
+    <string name="helloDiabetes">Olá Pedro Silva</string>
     <string name="lastRegisterDiabetes">Último registo:</string>
     <string name="dataRegisterDiabetes">- 07 de Março 2022, às 18:15</string>
     <string name="mg_dl_Diabetes"><font fgcolor="#FF000000" size="50">🩸90\n</font><font fgcolor="#FF808080" size="25">mg/dl</font></string>
@@ -108,7 +108,7 @@
     <string name="previousRegistersMeasures">Registos Anteriores</string>
 
     <!-- activity_measures_dashboard -->
-    <string name="helloMeasures">Olá João Silva</string>
+    <string name="helloMeasures">Olá Pedro Silva</string>
     <string name="lastRegisterMeasures">Último registo:</string>
     <string name="dataRegisterMeasures">- 07 de Março 2022, às 18:15</string>
     <string name="imcMeasures"><font fgcolor="#FF000000" size="50">24,2\n</font><font fgcolor="#FF808080" size="25">IMC</font></string>
@@ -141,15 +141,15 @@
     <string name="recoveryPasswordButton">RECUPERAR</string>
     <string name="loginAgainButton">ENTRAR DE NOVO</string>
     <string name="logoutButton">LOGOUT</string>
+    <string name="saveButton">GRAVAR</string>
     <string name="title_activity_teste">teste</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="gravar">Gravar</string>
 
 </resources>

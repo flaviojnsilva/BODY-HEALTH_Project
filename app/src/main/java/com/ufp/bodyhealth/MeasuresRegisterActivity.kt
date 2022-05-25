@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 
 class MeasuresRegisterActivity : AppCompatActivity() {
+
     lateinit var mRegisters: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {

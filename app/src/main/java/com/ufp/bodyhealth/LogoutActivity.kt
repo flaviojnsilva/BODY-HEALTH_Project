@@ -11,7 +11,6 @@ class LogoutActivity : AppCompatActivity() {
         setContentView(R.layout.activity_logout)
 
         val newLogin = findViewById<Button>(R.id.loginAgainButton)
-
         newLogin.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)

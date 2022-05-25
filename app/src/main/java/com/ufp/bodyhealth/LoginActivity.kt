@@ -1,6 +1,5 @@
 package com.ufp.bodyhealth
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,8 +8,6 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
 
 class LoginActivity : AppCompatActivity() {
 
@@ -27,7 +24,6 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         tvforgottenPass = findViewById<Button>(R.id.forgotPasswordLogin)
-
         btnLogin = findViewById(R.id.loginButton)
         etEmail = findViewById(R.id.emailLogin)
         etPass = findViewById(R.id.passwordLogin)
@@ -38,7 +34,6 @@ class LoginActivity : AppCompatActivity() {
         btnLogin.setOnClickListener {
             val email = etEmail.text.toString()
             val pass = etPass.text.toString()
-
             auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
                 if (it.isSuccessful) {
                     Toast.makeText(this, "Login com Sucesso!", Toast.LENGTH_SHORT).show()
@@ -48,7 +43,6 @@ class LoginActivity : AppCompatActivity() {
                     Toast.makeText(this, "Login Falhado!", Toast.LENGTH_SHORT).show()
             }
         }
-
         tvforgottenPass.setOnClickListener {
             val intent = Intent(this, ForgottenPasswordActivity::class.java)
             startActivity(intent)

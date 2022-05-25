@@ -18,7 +18,6 @@ class RegisterActivity : AppCompatActivity() {
     lateinit var etPassword: EditText
     lateinit var etConfPass: EditText
     private lateinit var btnSignUp: Button
-
     private lateinit var mAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,13 +30,10 @@ class RegisterActivity : AppCompatActivity() {
         etPassword = findViewById(R.id.passwordRegister)
         etConfPass = findViewById(R.id.passwordConfirmationRegister)
         btnSignUp = findViewById(R.id.registerButton)
-
         mAuth = Firebase.auth
-
         btnSignUp.setOnClickListener {
             signUpUser()
         }
-
     }
 
     private fun signUpUser() {
@@ -53,7 +49,6 @@ class RegisterActivity : AppCompatActivity() {
             Toast.makeText(this, "Por favor preencha os dados!", Toast.LENGTH_SHORT).show()
             return
         }
-
         if (pass != confirmPassword) {
             Toast.makeText(this, "Confirmação password errada!", Toast.LENGTH_SHORT)
                 .show()

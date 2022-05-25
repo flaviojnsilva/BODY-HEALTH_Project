@@ -9,6 +9,7 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
 class ForgottenPasswordActivity : AppCompatActivity() {
+
     private var mAuth: FirebaseAuth? = null
     lateinit var btnRecovery: Button
     lateinit var etEmail: EditText
@@ -23,7 +24,6 @@ class ForgottenPasswordActivity : AppCompatActivity() {
 
         btnRecovery.setOnClickListener {
             val email = etEmail.text.toString().trim()
-
             if (TextUtils.isEmpty(email)) {
                 Toast.makeText(applicationContext, "Enter your email!", Toast.LENGTH_SHORT).show()
             } else {
@@ -46,5 +46,4 @@ class ForgottenPasswordActivity : AppCompatActivity() {
             }
         }
     }
-
 }

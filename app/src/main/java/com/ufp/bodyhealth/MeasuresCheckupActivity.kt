@@ -11,7 +11,6 @@ class MeasuresCheckupActivity : AppCompatActivity() {
         setContentView(R.layout.activity_measures_checkup)
 
         val newRegister = findViewById<Button>(R.id.newRegisterMeasures)
-
         newRegister.setOnClickListener {
             val intent = Intent(this, MeasuresRegisterActivity::class.java)
             startActivity(intent)

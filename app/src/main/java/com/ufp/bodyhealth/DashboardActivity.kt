@@ -1,11 +1,9 @@
 package com.ufp.bodyhealth
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 
@@ -24,7 +22,7 @@ class DashboardActivity : AppCompatActivity() {
         diabetes = findViewById(R.id.diabetesDashboard)
         measures = findViewById(R.id.measuresDashboard)
         blood = findViewById(R.id.bloodPressureDashboard)
-        profile = findViewById(R.id.iconProfile)
+        profile = findViewById(R.id.iconProfileDashboard)
         steps = findViewById(R.id.stepsNumberDashboard)
 
         diabetes.setOnClickListener {
@@ -47,6 +45,5 @@ class DashboardActivity : AppCompatActivity() {
             val intent = Intent(this, ActivityResumeActivity::class.java)
             startActivity(intent)
         }
-
     }
 }
